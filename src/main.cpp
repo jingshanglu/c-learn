@@ -1,50 +1,13 @@
-// #include <iostream>
-#include <stdio.h>
-#include "tree.h"
-
-// typedef struct node
-// {
-//     int val;
-//     node* left;
-//     node* right;
-// }Node;
-
-// void innerScan(Node* root, vector<int> &res) {
-//     if (root->left)
-//     {
-//         innerScan(root->left, res);
-//     }
-//     res.push_back(root->val);
-//     if (root->right)
-//     {
-//         innerScan(root->right, res);
-//     }
-    
-    
-// }
-
-
+#include <test/caseone.h>
 int main(int argc, char const *argv[])
 {
-    /* code */
-    // cout <<  "hello world !!" << endl;
+    // Book b("c++");
+    // Book tb = std::move(b);
+    // std::cout << "old b name is " << b.get_name() << " count is " << b.get_mCount();
+    // std::cout << "\ntb name is " << tb.get_name() << " count is " << tb.get_mCount();
+    // std::cout << "\ntb name is ";
 
-    Tree *tleft = new Tree();
-    Tree *tright = new Tree();
-    Tree *left = new Tree(0, tleft, tright);
-    Tree *right = new Tree(2, tleft, tright);
-    Tree *root = new Tree(1, left, right);
-    vector<int> res;
-
-    root->innerOrderScan(&res);
-    delete root;
-    // innerScan(&root, res);
-    for (size_t i = 0; i < res.size(); i++)
-    {
-        printf("%d \n", res[i]);
-    }
-    
-    printf("hello world.\n");
+    test();
     return 0;
 }
 

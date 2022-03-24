@@ -1,22 +1,4 @@
-#ifndef TREEH
-#define TREEH
-#include <stdio.h>
-#include <vector>
-using namespace std;
-
-class Tree
-{
-private:
-    int val;
-    Tree* left;
-    Tree* right;
-public:
-    Tree(){};
-    Tree(int v);
-    Tree(int v, Tree* l, Tree* r);
-    ~Tree();
-    void innerOrderScan(vector<int> *res);
-};
+#include <core/tree.h>
 
 Tree::Tree(int v) {
     val = v;
@@ -46,6 +28,3 @@ void Tree::innerOrderScan(vector<int> *res)
         right->innerOrderScan(res);
     }
 }
-
-
-#endif
