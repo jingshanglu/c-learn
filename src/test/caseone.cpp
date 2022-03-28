@@ -1,5 +1,5 @@
-#include <core/tree.h>
-#include <test/caseone.h>
+#include "core/tree.h"
+#include "test/caseone.h"
 
 void test() {
     Tree child1 = Tree(1, nullptr, nullptr);
