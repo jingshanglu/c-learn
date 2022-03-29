@@ -5,6 +5,7 @@ mkdir build
 cd build
 cmake ../
 make
+./mystore
 ```
 actual command
 

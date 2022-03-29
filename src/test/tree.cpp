@@ -1,9 +1,9 @@
-#include "core/tree.h"
+#include "test/tree.h"
 
 Tree::Tree(int v) {
     val = v;
-    left = NULL;
-    right = NULL;
+    left = nullptr;
+    right = nullptr;
 };
 
 Tree::Tree(int v, Tree* l, Tree* r)

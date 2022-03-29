@@ -1,4 +1,4 @@
-#include "core/tree.h"
+#include "test/tree.h"
 #include "test/caseone.h"
 
 void test() {

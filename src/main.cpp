@@ -1,4 +1,14 @@
 #include "test/caseone.h"
+#include <iostream>
+
+int a = 10;
+
+int func(int t) {
+    std::cout << "t: " << t << "address: " << &t << std::endl;
+    int l = 10;
+    return l;
+};
+
 int main(int argc, char const *argv[])
 {
     // Book b("c++");

@@ -1,5 +1,3 @@
-// #ifndef TREE_H
-// #define TREE_H
 #pragma
 #include <stdio.h>
 #include <vector>
@@ -18,5 +16,3 @@ public:
     ~Tree();
     void innerOrderScan(vector<int> *res);
 };
-
-// #endif
